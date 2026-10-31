@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="IEEE Student Branch at RajaRajeswari College of Engineering, Bengaluru — connecting curious minds, advancing technology and building a community of innovators." />
+  <meta name="keywords" content="IEEE RRCE, IEEE student branch, RajaRajeswari College of Engineering, Bengaluru, engineering students, technical community" />
+  <meta property="og:title" content="IEEE RRCE — Engineering the Future, Together." />
+  <meta property="og:description" content="IEEE Student Branch at RajaRajeswari College of Engineering, Bengaluru." />
+  <meta property="og:type" content="website" />
+  <title>IEEE RRCE | RajaRajeswari College of Engineering, Bengaluru</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;0,800;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════ NAVIGATION ═══ -->
+  <nav id="navbar" class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+
+      <a href="#home" class="nav-brand" aria-label="IEEE RRCE Home">
+        <div class="brand-logo-wrap">
+          <svg class="brand-svg" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="2" y="2" width="40" height="40" rx="8" stroke="#1456A0" stroke-width="2"/>
+            <path d="M8 14h6v16H8zM16 14h6v16h-6zM26 14c4.418 0 8 3.582 8 8s-3.582 8-8 8h-2V14h2z" fill="#1456A0"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-rrce">RRCE</span>
+          <span class="brand-ieee">IEEE</span>
+          <span class="brand-tagline">Innovate. Inspire. Impact.</span>
+        </div>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navMenu">
+        <span class="toggle-bar"></span>
+        <span class="toggle-bar"></span>
+        <span class="toggle-bar"></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu" role="menubar">
+        <li role="none"><a href="#home"       class="nav-link active" role="menuitem" id="nav-home">Home</a></li>
+        <li role="none"><a href="#about"      class="nav-link" role="menuitem" id="nav-about">About</a></li>
+        <li role="none"><a href="#communities" class="nav-link" role="menuitem" id="nav-communities">Communities</a></li>
+        <li role="none"><a href="#events"     class="nav-link" role="menuitem" id="nav-events">Events</a></li>
+        <li role="none"><a href="#innovation" class="nav-link" role="menuitem" id="nav-innovation">Innovation</a></li>
+        <li role="none"><a href="#leadership" class="nav-link" role="menuitem" id="nav-leadership">Leadership</a></li>
+        <li role="none"><a href="#gallery"    class="nav-link" role="menuitem" id="nav-gallery">Gallery</a></li>
+        <li role="none"><a href="#contact"    class="nav-link" role="menuitem" id="nav-contact">Contact</a></li>
+      </ul>
+
+      <a href="#join" class="btn-join" id="joinBtn" aria-label="Join IEEE RRCE">Join IEEE</a>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════════════ HERO ═══ -->
+  <section id="home" class="hero-section" aria-label="Hero">
+
+    <!-- Particle canvas background -->
+    <canvas id="heroCanvas" class="hero-canvas" aria-hidden="true"></canvas>
+
+    <!-- Subtle grid overlay -->
+    <div class="hero-grid-overlay" aria-hidden="true"></div>
+
+    <div class="hero-container">
+
+      <!-- Left: Copy -->
+      <div class="hero-copy" data-reveal>
+        <div class="hero-eyebrow">
+          <span class="eyebrow-dot" aria-hidden="true"></span>
+          IEEE Student Branch · Bengaluru
+        </div>
+
+        <h1 class="hero-headline">
+          <span class="line-wrap"><span class="headline-line">CIRCUITS.</span></span>
+          <span class="line-wrap"><span class="headline-line delay-1">CODE.</span></span>
+          <span class="line-wrap italic-line"><span class="headline-line delay-2">CHANGE.</span></span>
+        </h1>
+
+        <p class="hero-sub">
+          Connecting curious minds, advancing technology and building
+          a community of innovators through IEEE at RRCE.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#about" class="btn-primary" id="btnExplore">
+            <span>Explore IEEE</span>
+            <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#events" class="btn-secondary" id="btnEvents">
+            <span>Discover Events</span>
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-num" data-count="1884">1884</span>
+            <span class="stat-label">IEEE Founded</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat-item">
+            <span class="stat-num">423K+</span>
+            <span class="stat-label">Global Members</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat-item">
+            <span class="stat-num">160+</span>
+            <span class="stat-label">Countries</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: 3D Centerpiece -->
+      <div class="hero-3d-wrap" id="hero3dWrap" aria-hidden="true">
+        <div class="scene" id="scene3d">
+
+          <!-- Platform rings -->
+          <div class="platform-wrap">
+            <div class="platform-ring ring-1"></div>
+            <div class="platform-ring ring-2"></div>
+            <div class="platform-glow"></div>
+          </div>
+
+          <!-- Core 3D object -->
+          <div class="obj-wrapper" id="objWrapper">
+            <div class="cube-container" id="cubeContainer">
+
+              <!-- Outer diamond frame -->
+              <div class="diamond-outer">
+                <div class="diamond-face d-face-1"></div>
+                <div class="diamond-face d-face-2"></div>
+                <div class="diamond-face d-face-3"></div>
+                <div class="diamond-face d-face-4"></div>
+              </div>
+
+              <!-- Middle ring -->
+              <div class="mid-ring mid-ring-h"></div>
+              <div class="mid-ring mid-ring-v"></div>
+              <div class="mid-ring mid-ring-d"></div>
+
+              <!-- Core sphere -->
+              <div class="core-sphere">
+                <div class="sphere-inner">
+                  <svg class="sphere-ieee" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="40" cy="40" r="38" stroke="rgba(20,86,160,0.6)" stroke-width="1"/>
+                    <text x="50%" y="38%" dominant-baseline="middle" text-anchor="middle" font-family="Inter,sans-serif" font-weight="800" font-size="16" fill="#1456A0" letter-spacing="2">IEEE</text>
+                    <text x="50%" y="62%" dominant-baseline="middle" text-anchor="middle" font-family="Inter,sans-serif" font-weight="600" font-size="9" fill="#B7C5D6" letter-spacing="3">RRCE</text>
+                  </svg>
+                </div>
+                <div class="sphere-highlight"></div>
+                <div class="sphere-glow"></div>
+              </div>
+
+              <!-- Orbiting electrons -->
+              <div class="orbit orbit-1">
+                <div class="electron"></div>
+              </div>
+              <div class="orbit orbit-2">
+                <div class="electron"></div>
+              </div>
+              <div class="orbit orbit-3">
+                <div class="electron"></div>
+              </div>
+
+              <!-- Corner nodes -->
+              <div class="node node-tl"></div>
+              <div class="node node-tr"></div>
+              <div class="node node-bl"></div>
+              <div class="node node-br"></div>
+              <div class="node node-top"></div>
+              <div class="node node-bot"></div>
+
+            </div>
+          </div><!-- /obj-wrapper -->
+
+        </div><!-- /scene -->
+      </div><!-- /hero-3d-wrap -->
+
+    </div><!-- /hero-container -->
+
+    <!-- Scroll indicator -->
+    <div class="scroll-hint" aria-label="Scroll down">
+      <span class="scroll-label">Scroll</span>
+      <div class="scroll-arrow">
+        <div class="scroll-bar"></div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ══════════════════════════════════════════════════ ABOUT ═══ -->
+  <section id="about" class="about-section" aria-labelledby="about-heading">
+    <div class="section-container">
+
+      <div class="about-layout">
+
+        <div class="about-text-col" data-reveal>
+          <div class="section-eyebrow">Who We Are</div>
+          <h2 class="section-heading" id="about-heading">A COMMUNITY<br>OF INNOVATORS.</h2>
+          <p class="about-lead">
+            IEEE — the Institute of Electrical and Electronics Engineers — is the world's largest technical professional organization dedicated to advancing technology for the benefit of humanity.
+          </p>
+          <p class="about-body">
+            The IEEE Student Branch at RajaRajeswari College of Engineering (RRCE), Bengaluru, brings this global mission to campus — offering students a platform to learn, collaborate, compete and grow as the next generation of engineers and technologists.
+          </p>
+
+          <div class="about-pillars">
+            <div class="pillar">
+              <div class="pillar-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div>
+                <h3 class="pillar-title">Mission</h3>
+                <p class="pillar-text">To foster technical excellence, collaborative learning and professional growth among engineering students through IEEE's global network.</p>
+              </div>
+            </div>
+            <div class="pillar">
+              <div class="pillar-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.6"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+              </div>
+              <div>
+                <h3 class="pillar-title">Vision</h3>
+                <p class="pillar-text">To cultivate a vibrant, innovation-driven student community at RRCE that contributes meaningfully to technology and society.</p>
+              </div>
+            </div>
+            <div class="pillar">
+              <div class="pillar-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="1.6"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+              </div>
+              <div>
+                <h3 class="pillar-title">Community</h3>
+                <p class="pillar-text">A student-led space where engineers build skills through workshops, competitions, research, mentorship and inter-chapter collaboration.</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="#communities" class="btn-outline" id="btnLearnMore">Learn More</a>
+        </div>
+
+        <div class="about-visual-col" data-reveal data-reveal-delay="200">
+          <div class="about-img-stack">
+            <div class="img-card img-card-main">
+              <img src="assets/campus_hero.png" alt="RajaRajeswari College of Engineering campus aerial view" loading="lazy" />
+              <div class="img-overlay"></div>
+            </div>
+            <div class="img-card img-card-accent">
+              <img src="assets/community_event.png" alt="IEEE RRCE students collaborating at a technical event" loading="lazy" />
+              <div class="img-overlay"></div>
+            </div>
+            <div class="about-badge" aria-label="Established 1884">
+              <span class="badge-num">1884</span>
+              <span class="badge-text">IEEE<br>Founded</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ TECHNICAL COMMUNITIES ═══ -->
+  <section id="communities" class="communities-section" aria-labelledby="communities-heading">
+    <div class="section-container">
+      <div class="section-header" data-reveal>
+        <div class="section-eyebrow">Technical Societies</div>
+        <h2 class="section-heading" id="communities-heading">EXPLORE OUR<br>COMMUNITIES.</h2>
+        <p class="section-sub">Dive into specialized IEEE technical societies that align with your passion and career goals. Each society offers a unique pathway to expertise.</p>
+      </div>
+
+      <div class="communities-grid">
+
+        <div class="community-card" data-reveal tabindex="0" role="article" aria-label="IEEE Computer Society">
+          <div class="card-icon-wrap">
+            <div class="card-icon cs-icon">
+              <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="24" rx="3" stroke="currentColor" stroke-width="2"/><path d="M16 38h16M24 34v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M12 18l4 4-4 4M22 26h6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+          </div>
+          <h3 class="card-title">Computer Society</h3>
+          <p class="card-desc">Advancing computing science and engineering. Explore artificial intelligence, software engineering, cybersecurity and computing systems.</p>
+          <div class="card-tags">
+            <span class="tag">AI & ML</span><span class="tag">Cybersecurity</span><span class="tag">Software</span>
+          </div>
+          <a href="#contact" class="card-cta" aria-label="Explore Computer Society">Explore <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <div class="card-shine" aria-hidden="true"></div>
+        </div>
+
+        <div class="community-card" data-reveal data-reveal-delay="100" tabindex="0" role="article" aria-label="IEEE Power and Energy Society">
+          <div class="card-icon-wrap">
+            <div class="card-icon pe-icon">
+              <svg viewBox="0 0 48 48" fill="none"><path d="M26 6L10 26h14l-2 16 18-20H26L26 6z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+          </div>
+          <h3 class="card-title">Power & Energy Society</h3>
+          <p class="card-desc">Shaping sustainable energy futures through research in power systems, renewable energy, smart grids and electrical infrastructure.</p>
+          <div class="card-tags">
+            <span class="tag">Renewables</span><span class="tag">Smart Grid</span><span class="tag">Power Systems</span>
+          </div>
+          <a href="#contact" class="card-cta" aria-label="Explore Power and Energy Society">Explore <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <div class="card-shine" aria-hidden="true"></div>
+        </div>
+
+        <div class="community-card" data-reveal data-reveal-delay="200" tabindex="0" role="article" aria-label="IEEE Signal Processing Society">
+          <div class="card-icon-wrap">
+            <div class="card-icon sp-icon">
+              <svg viewBox="0 0 48 48" fill="none"><path d="M6 24h6l4-12 6 24 4-18 4 10 4-4 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+          </div>
+          <h3 class="card-title">Signal Processing Society</h3>
+          <p class="card-desc">Advancing the science and practice of signal and information processing including image, audio, speech and communications signal processing.</p>
+          <div class="card-tags">
+            <span class="tag">Image Processing</span><span class="tag">Audio</span><span class="tag">DSP</span>
+          </div>
+          <a href="#contact" class="card-cta" aria-label="Explore Signal Processing Society">Explore <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <div class="card-shine" aria-hidden="true"></div>
+        </div>
+
+        <div class="community-card" data-reveal data-reveal-delay="300" tabindex="0" role="article" aria-label="IEEE Communications Society">
+          <div class="card-icon-wrap">
+            <div class="card-icon comm-icon">
+              <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="16" stroke="currentColor" stroke-width="2"/><ellipse cx="24" cy="24" rx="8" ry="16" stroke="currentColor" stroke-width="2"/><path d="M8 24h32M14 14c2.7 3.3 5.7 5 10 5s7.3-1.7 10-5M14 34c2.7-3.3 5.7-5 10-5s7.3 1.7 10 5" stroke="currentColor" stroke-width="2"/></svg>
+            </div>
+          </div>
+          <h3 class="card-title">Communications Society</h3>
+          <p class="card-desc">Connecting the world through advances in telecommunications, networking, wireless systems and information theory.</p>
+          <div class="card-tags">
+            <span class="tag">5G/6G</span><span class="tag">Networking</span><span class="tag">Wireless</span>
+          </div>
+          <a href="#contact" class="card-cta" aria-label="Explore Communications Society">Explore <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <div class="card-shine" aria-hidden="true"></div>
+        </div>
+
+        <div class="community-card" data-reveal data-reveal-delay="400" tabindex="0" role="article" aria-label="IEEE Robotics and Automation Society">
+          <div class="card-icon-wrap">
+            <div class="card-icon ra-icon">
+              <svg viewBox="0 0 48 48" fill="none"><rect x="16" y="18" width="16" height="18" rx="2" stroke="currentColor" stroke-width="2"/><rect x="20" y="8" width="8" height="10" rx="1" stroke="currentColor" stroke-width="2"/><circle cx="22" cy="26" r="2" fill="currentColor"/><circle cx="26" cy="26" r="2" fill="currentColor"/><path d="M10 24h6M32 24h6M20 36v4M28 36v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+          </div>
+          <h3 class="card-title">Robotics & Automation</h3>
+          <p class="card-desc">Advancing innovation in robotics, automation, intelligent systems and the development of machines that work alongside humans.</p>
+          <div class="card-tags">
+            <span class="tag">Robotics</span><span class="tag">Automation</span><span class="tag">IoT</span>
+          </div>
+          <a href="#contact" class="card-cta" aria-label="Explore Robotics and Automation Society">Explore <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <div class="card-shine" aria-hidden="true"></div>
+        </div>
+
+        <div class="community-card" data-reveal data-reveal-delay="500" tabindex="0" role="article" aria-label="IEEE Women in Engineering">
+          <div class="card-icon-wrap">
+            <div class="card-icon wie-icon">
+              <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="16" r="8" stroke="currentColor" stroke-width="2"/><path d="M24 24v16M18 34h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M8 42c0-8.837 7.163-12 16-12s16 3.163 16 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+          </div>
+          <h3 class="card-title">Women in Engineering</h3>
+          <p class="card-desc">IEEE WIE empowers women engineers and scientists through global networking, mentoring and professional development programs.</p>
+          <div class="card-tags">
+            <span class="tag">Leadership</span><span class="tag">Mentoring</span><span class="tag">Diversity</span>
+          </div>
+          <a href="#contact" class="card-cta" aria-label="Explore Women in Engineering">Explore <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <div class="card-shine" aria-hidden="true"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ EVENTS ═══ -->
+  <section id="events" class="events-section" aria-labelledby="events-heading">
+    <div class="section-container">
+      <div class="section-header" data-reveal>
+        <div class="section-eyebrow">What's Happening</div>
+        <h2 class="section-heading" id="events-heading">EVENTS &<br>ACTIVITIES.</h2>
+        <p class="section-sub">From technical workshops to national hackathons — IEEE RRCE keeps you at the forefront of engineering.</p>
+      </div>
+
+      <div class="events-grid">
+
+        <div class="event-card event-featured" data-reveal tabindex="0" role="article" aria-label="TechSprint Hackathon">
+          <div class="event-img-wrap">
+            <img src="assets/community_event.png" alt="Students collaborating at IEEE RRCE hackathon" loading="lazy" />
+            <div class="event-img-overlay"></div>
+            <div class="event-badge-wrap"><span class="event-badge upcoming">Upcoming</span></div>
+          </div>
+          <div class="event-body">
+            <div class="event-meta">
+              <span class="event-type">Hackathon</span>
+              <span class="event-date">📅 [Edit Date]</span>
+            </div>
+            <h3 class="event-title">TechSprint — 24-Hour Hackathon</h3>
+            <p class="event-desc">An intensive 24-hour hackathon challenging students to build innovative solutions for real-world engineering problems. Open to all branches.</p>
+            <a href="#contact" class="event-link" aria-label="Register for TechSprint Hackathon">Register Now →</a>
+          </div>
+        </div>
+
+        <div class="event-card" data-reveal data-reveal-delay="100" tabindex="0" role="article" aria-label="PCB Design Workshop">
+          <div class="event-body">
+            <div class="event-meta">
+              <span class="event-type workshop">Workshop</span>
+              <span class="event-date">📅 [Edit Date]</span>
+            </div>
+            <h3 class="event-title">PCB Design & Prototyping Workshop</h3>
+            <p class="event-desc">Hands-on training in professional PCB design, component selection and rapid prototyping using industry-standard tools.</p>
+            <a href="#contact" class="event-link" aria-label="Learn more about PCB Design Workshop">Learn More →</a>
+          </div>
+          <div class="event-accent-line"></div>
+        </div>
+
+        <div class="event-card" data-reveal data-reveal-delay="200" tabindex="0" role="article" aria-label="AI and ML Seminar">
+          <div class="event-body">
+            <div class="event-meta">
+              <span class="event-type seminar">Seminar</span>
+              <span class="event-date">📅 [Edit Date]</span>
+            </div>
+            <h3 class="event-title">AI & Machine Learning in Engineering</h3>
+            <p class="event-desc">An expert-led seminar exploring the intersection of AI, data science and engineering practice — with demos and live use cases.</p>
+            <a href="#contact" class="event-link" aria-label="Learn more about AI and ML Seminar">Learn More →</a>
+          </div>
+          <div class="event-accent-line"></div>
+        </div>
+
+        <div class="event-card" data-reveal data-reveal-delay="300" tabindex="0" role="article" aria-label="Code Circuit Competition">
+          <div class="event-body">
+            <div class="event-meta">
+              <span class="event-type competition">Competition</span>
+              <span class="event-date">📅 [Edit Date]</span>
+            </div>
+            <h3 class="event-title">Code Circuit — Programming Contest</h3>
+            <p class="event-desc">A timed algorithmic programming competition across multiple difficulty levels. Compete individually or in teams — win exciting prizes.</p>
+            <a href="#contact" class="event-link" aria-label="Learn more about Code Circuit">Learn More →</a>
+          </div>
+          <div class="event-accent-line"></div>
+        </div>
+
+        <div class="event-card" data-reveal data-reveal-delay="400" tabindex="0" role="article" aria-label="Guest Lecture Series">
+          <div class="event-body">
+            <div class="event-meta">
+              <span class="event-type lecture">Lecture</span>
+              <span class="event-date">📅 [Edit Date]</span>
+            </div>
+            <h3 class="event-title">Distinguished Lecture Series</h3>
+            <p class="event-desc">Industry leaders and IEEE fellows share their journeys and insights across technology, research, entrepreneurship and engineering careers.</p>
+            <a href="#contact" class="event-link" aria-label="Learn more about Distinguished Lecture Series">Learn More →</a>
+          </div>
+          <div class="event-accent-line"></div>
+        </div>
+
+        <div class="event-card" data-reveal data-reveal-delay="500" tabindex="0" role="article" aria-label="Technical Conference">
+          <div class="event-body">
+            <div class="event-meta">
+              <span class="event-type conference">Conference</span>
+              <span class="event-date">📅 [Edit Date]</span>
+            </div>
+            <h3 class="event-title">RRCE Technical Symposium</h3>
+            <p class="event-desc">An annual inter-college technical symposium featuring paper presentations, project expos, debates and collaborative sessions across engineering disciplines.</p>
+            <a href="#contact" class="event-link" aria-label="Learn more about RRCE Technical Symposium">Learn More →</a>
+          </div>
+          <div class="event-accent-line"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ INNOVATION ═══ -->
+  <section id="innovation" class="innovation-section" aria-labelledby="innovation-heading">
+    <div class="section-container">
+
+      <div class="innovation-layout">
+
+        <div class="innovation-visual" data-reveal>
+          <div class="inno-img-main">
+            <img src="assets/innovation_lab.png" alt="IEEE RRCE students working in electronics innovation lab" loading="lazy" />
+            <div class="inno-img-overlay"></div>
+          </div>
+          <div class="inno-stats-card" data-reveal data-reveal-delay="300">
+            <div class="inno-stat">
+              <span class="inno-stat-num">[XX]</span>
+              <span class="inno-stat-label">Active Projects</span>
+            </div>
+            <div class="inno-stat-div" aria-hidden="true"></div>
+            <div class="inno-stat">
+              <span class="inno-stat-num">[XX]</span>
+              <span class="inno-stat-label">Research Areas</span>
+            </div>
+            <div class="inno-stat-div" aria-hidden="true"></div>
+            <div class="inno-stat">
+              <span class="inno-stat-num">[XX]</span>
+              <span class="inno-stat-label">Publications</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="innovation-text" data-reveal data-reveal-delay="150">
+          <div class="section-eyebrow">Research & Innovation</div>
+          <h2 class="section-heading" id="innovation-heading">WHERE IDEAS<br>BECOME REALITY.</h2>
+          <p class="inno-lead">At IEEE RRCE, students don't just study engineering — they practise it. From prototype circuits to applied research, the branch supports hands-on innovation at every level.</p>
+
+          <div class="inno-features">
+            <div class="inno-feature">
+              <div class="inno-feat-marker" aria-hidden="true"></div>
+              <div>
+                <h3 class="inno-feat-title">Student Projects</h3>
+                <p class="inno-feat-desc">IEEE members actively develop prototypes, embedded systems and software projects that tackle real engineering challenges.</p>
+              </div>
+            </div>
+            <div class="inno-feature">
+              <div class="inno-feat-marker" aria-hidden="true"></div>
+              <div>
+                <h3 class="inno-feat-title">Research Interests</h3>
+                <p class="inno-feat-desc">Students explore emerging areas including IoT, renewable energy, signal processing, robotics and machine learning.</p>
+              </div>
+            </div>
+            <div class="inno-feature">
+              <div class="inno-feat-marker" aria-hidden="true"></div>
+              <div>
+                <h3 class="inno-feat-title">Collaborative Development</h3>
+                <p class="inno-feat-desc">Cross-disciplinary teams work together on innovation challenges, supported by faculty mentors and IEEE's global network.</p>
+              </div>
+            </div>
+            <div class="inno-feature">
+              <div class="inno-feat-marker" aria-hidden="true"></div>
+              <div>
+                <h3 class="inno-feat-title">Industry Connect</h3>
+                <p class="inno-feat-desc">Regular industry interactions, internship guidance and IEEE membership perks bridge the gap between academia and the professional world.</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="#contact" class="btn-primary" id="btnInnovate">
+            <span>Get Involved</span>
+            <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════ ACHIEVEMENTS ═══ -->
+  <section id="achievements" class="achievements-section" aria-labelledby="ach-heading">
+    <div class="section-container">
+      <div class="section-header" data-reveal>
+        <div class="section-eyebrow">Our Milestones</div>
+        <h2 class="section-heading light" id="ach-heading">BUILT ON<br>EXCELLENCE.</h2>
+        <p class="section-sub light">These placeholders should be updated with verified, real data once available. Do not publish estimated or fabricated statistics.</p>
+      </div>
+
+      <div class="ach-grid">
+        <div class="ach-card" data-reveal tabindex="0">
+          <div class="ach-num">[###]</div>
+          <div class="ach-label">IEEE Members</div>
+          <div class="ach-note">Update with verified count</div>
+        </div>
+        <div class="ach-card" data-reveal data-reveal-delay="100" tabindex="0">
+          <div class="ach-num">[###]</div>
+          <div class="ach-label">Events Conducted</div>
+          <div class="ach-note">Update with verified count</div>
+        </div>
+        <div class="ach-card" data-reveal data-reveal-delay="200" tabindex="0">
+          <div class="ach-num">[###]</div>
+          <div class="ach-label">Awards & Recognitions</div>
+          <div class="ach-note">Update with verified info</div>
+        </div>
+        <div class="ach-card" data-reveal data-reveal-delay="300" tabindex="0">
+          <div class="ach-num">[###]</div>
+          <div class="ach-label">Student Projects</div>
+          <div class="ach-note">Update with verified count</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ LEADERSHIP ═══ -->
+  <section id="leadership" class="leadership-section" aria-labelledby="leadership-heading">
+    <div class="section-container">
+      <div class="section-header" data-reveal>
+        <div class="section-eyebrow">The Team</div>
+        <h2 class="section-heading" id="leadership-heading">THE PEOPLE<br>BEHIND IEEE RRCE.</h2>
+        <p class="section-sub">Led by dedicated faculty and driven by passionate students — these are the architects of IEEE RRCE.</p>
+      </div>
+
+      <div class="leadership-block">
+        <h3 class="leadership-group-title" data-reveal>Faculty Coordinator</h3>
+        <div class="leadership-row faculty-row">
+          <div class="leader-card faculty-card" data-reveal tabindex="0">
+            <div class="leader-avatar">
+              <div class="avatar-placeholder" aria-label="Faculty Coordinator photo placeholder">
+                <svg viewBox="0 0 60 60" fill="none" aria-hidden="true"><circle cx="30" cy="22" r="12" stroke="#B7C5D6" stroke-width="2"/><path d="M6 54c0-13.255 10.745-18 24-18s24 4.745 24 18" stroke="#B7C5D6" stroke-width="2" stroke-linecap="round"/></svg>
+              </div>
+            </div>
+            <div class="leader-info">
+              <h4 class="leader-name">[Faculty Name]</h4>
+              <span class="leader-role">IEEE Branch Faculty Coordinator</span>
+              <span class="leader-dept">Department of [ECE / CSE / EEE]</span>
+              <p class="leader-bio">Dedicated to nurturing the next generation of engineers through IEEE's global platform. Guides the student branch with expertise and enthusiasm.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="leadership-block">
+        <h3 class="leadership-group-title" data-reveal>Student Branch Leadership</h3>
+        <div class="leadership-row student-row">
+
+          <div class="leader-card student-card" data-reveal tabindex="0">
+            <div class="leader-avatar small-avatar">
+              <div class="avatar-placeholder" aria-label="Chairperson photo placeholder">
+                <svg viewBox="0 0 60 60" fill="none" aria-hidden="true"><circle cx="30" cy="22" r="12" stroke="#B7C5D6" stroke-width="2"/><path d="M6 54c0-13.255 10.745-18 24-18s24 4.745 24 18" stroke="#B7C5D6" stroke-width="2" stroke-linecap="round"/></svg>
+              </div>
+            </div>
+            <h4 class="leader-name">[Student Name]</h4>
+            <span class="leader-role">Chairperson</span>
+            <span class="leader-dept">[Branch / Year]</span>
+          </div>
+
+          <div class="leader-card student-card" data-reveal data-reveal-delay="100" tabindex="0">
+            <div class="leader-avatar small-avatar">
+              <div class="avatar-placeholder" aria-label="Vice Chairperson photo placeholder">
+                <svg viewBox="0 0 60 60" fill="none" aria-hidden="true"><circle cx="30" cy="22" r="12" stroke="#B7C5D6" stroke-width="2"/><path d="M6 54c0-13.255 10.745-18 24-18s24 4.745 24 18" stroke="#B7C5D6" stroke-width="2" stroke-linecap="round"/></svg>
+              </div>
+            </div>
+            <h4 class="leader-name">[Student Name]</h4>
+            <span class="leader-role">Vice Chairperson</span>
+            <span class="leader-dept">[Branch / Year]</span>
+          </div>
+
+          <div class="leader-card student-card" data-reveal data-reveal-delay="200" tabindex="0">
+            <div class="leader-avatar small-avatar">
+              <div class="avatar-placeholder" aria-label="Secretary photo placeholder">
+                <svg viewBox="0 0 60 60" fill="none" aria-hidden="true"><circle cx="30" cy="22" r="12" stroke="#B7C5D6" stroke-width="2"/><path d="M6 54c0-13.255 10.745-18 24-18s24 4.745 24 18" stroke="#B7C5D6" stroke-width="2" stroke-linecap="round"/></svg>
+              </div>
+            </div>
+            <h4 class="leader-name">[Student Name]</h4>
+            <span class="leader-role">Secretary</span>
+            <span class="leader-dept">[Branch / Year]</span>
+          </div>
+
+          <div class="leader-card student-card" data-reveal data-reveal-delay="300" tabindex="0">
+            <div class="leader-avatar small-avatar">
+              <div class="avatar-placeholder" aria-label="Treasurer photo placeholder">
+                <svg viewBox="0 0 60 60" fill="none" aria-hidden="true"><circle cx="30" cy="22" r="12" stroke="#B7C5D6" stroke-width="2"/><path d="M6 54c0-13.255 10.745-18 24-18s24 4.745 24 18" stroke="#B7C5D6" stroke-width="2" stroke-linecap="round"/></svg>
+              </div>
+            </div>
+            <h4 class="leader-name">[Student Name]</h4>
+            <span class="leader-role">Treasurer</span>
+            <span class="leader-dept">[Branch / Year]</span>
+          </div>
+
+          <div class="leader-card student-card" data-reveal data-reveal-delay="400" tabindex="0">
+            <div class="leader-avatar small-avatar">
+              <div class="avatar-placeholder" aria-label="Technical Lead photo placeholder">
+                <svg viewBox="0 0 60 60" fill="none" aria-hidden="true"><circle cx="30" cy="22" r="12" stroke="#B7C5D6" stroke-width="2"/><path d="M6 54c0-13.255 10.745-18 24-18s24 4.745 24 18" stroke="#B7C5D6" stroke-width="2" stroke-linecap="round"/></svg>
+              </div>
+            </div>
+            <h4 class="leader-name">[Student Name]</h4>
+            <span class="leader-role">Technical Lead</span>
+            <span class="leader-dept">[Branch / Year]</span>
+          </div>
+
+          <div class="leader-card student-card" data-reveal data-reveal-delay="500" tabindex="0">
+            <div class="leader-avatar small-avatar">
+              <div class="avatar-placeholder" aria-label="Events Coordinator photo placeholder">
+                <svg viewBox="0 0 60 60" fill="none" aria-hidden="true"><circle cx="30" cy="22" r="12" stroke="#B7C5D6" stroke-width="2"/><path d="M6 54c0-13.255 10.745-18 24-18s24 4.745 24 18" stroke="#B7C5D6" stroke-width="2" stroke-linecap="round"/></svg>
+              </div>
+            </div>
+            <h4 class="leader-name">[Student Name]</h4>
+            <span class="leader-role">Events Coordinator</span>
+            <span class="leader-dept">[Branch / Year]</span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════ JOIN CTA ═══ -->
+  <section id="join" class="join-section" aria-labelledby="join-heading">
+    <canvas id="joinCanvas" class="join-canvas" aria-hidden="true"></canvas>
+    <div class="join-container" data-reveal>
+      <div class="join-eyebrow">Become a Member</div>
+      <h2 class="join-heading" id="join-heading">YOUR IDEAS DESERVE<br>A BIGGER PLATFORM.</h2>
+      <p class="join-sub">Connect with a community that learns, builds and shapes the future of technology. IEEE membership opens doors to global conferences, journals, competitions and a world-class professional network.</p>
+      <div class="join-benefits">
+        <div class="join-benefit">
+          <span class="benefit-icon">🌐</span>
+          <span>Global Network</span>
+        </div>
+        <div class="join-benefit">
+          <span class="benefit-icon">📚</span>
+          <span>IEEE Xplore Access</span>
+        </div>
+        <div class="join-benefit">
+          <span class="benefit-icon">🏆</span>
+          <span>Competitions & Awards</span>
+        </div>
+        <div class="join-benefit">
+          <span class="benefit-icon">🤝</span>
+          <span>Mentorship</span>
+        </div>
+      </div>
+      <a href="https://www.ieee.org/membership/students/index.html" target="_blank" rel="noopener noreferrer" class="btn-join-big" id="btnJoinCta" aria-label="Join the IEEE Community">
+        Join the IEEE Community
+        <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════ GALLERY ═══ -->
+  <section id="gallery" class="gallery-section" aria-labelledby="gallery-heading">
+    <div class="section-container">
+      <div class="section-header" data-reveal>
+        <div class="section-eyebrow">Photo Gallery</div>
+        <h2 class="section-heading" id="gallery-heading">MOMENTS THAT<br>DEFINE US.</h2>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item gallery-wide" data-reveal tabindex="0" role="img" aria-label="IEEE RRCE campus">
+          <img src="assets/campus_hero.png" alt="Aerial view of RajaRajeswari College of Engineering campus" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-caption">RRCE Campus</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-reveal data-reveal-delay="100" tabindex="0" role="img" aria-label="IEEE community event">
+          <img src="assets/community_event.png" alt="IEEE RRCE community technical event" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-caption">Community Events</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-reveal data-reveal-delay="200" tabindex="0" role="img" aria-label="Innovation lab">
+          <img src="assets/innovation_lab.png" alt="IEEE RRCE innovation and electronics lab" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-caption">Innovation Lab</span>
+          </div>
+        </div>
+        <div class="gallery-item gallery-tall" data-reveal data-reveal-delay="300" tabindex="0" role="img" aria-label="Technical presentation">
+          <img src="assets/gallery1.png" alt="IEEE RRCE students at technical project presentation" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-caption">Project Expo</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-reveal data-reveal-delay="400" tabindex="0" role="img" aria-label="Guest lecture">
+          <img src="assets/gallery2.png" alt="IEEE RRCE Distinguished Lecture Series" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-caption">Lecture Series</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-reveal data-reveal-delay="500" tabindex="0" role="img" aria-label="IEEE emblem">
+          <img src="assets/ieee_emblem.png" alt="IEEE emblem representing global engineering excellence" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-caption">IEEE Excellence</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ CONTACT ═══ -->
+  <section id="contact" class="contact-section" aria-labelledby="contact-heading">
+    <div class="section-container">
+      <div class="contact-layout">
+
+        <div class="contact-info" data-reveal>
+          <div class="section-eyebrow">Get In Touch</div>
+          <h2 class="section-heading" id="contact-heading">LET'S CONNECT.</h2>
+          <p class="contact-lead">Have questions about membership, events or the student branch? Reach out — we'd love to hear from you.</p>
+
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="1.8"/></svg>
+              </div>
+              <div>
+                <span class="contact-label">Address</span>
+                <span class="contact-value">RajaRajeswari College of Engineering<br>Mysore Road, Bengaluru – 560 098<br>Karnataka, India</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="1.8"/><path d="M22 6l-10 7L2 6" stroke="currentColor" stroke-width="1.8"/></svg>
+              </div>
+              <div>
+                <span class="contact-label">Email</span>
+                <span class="contact-value">[ieee.rrce@example.com] — Update with official address</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.07 12 19.79 19.79 0 011 3.18 2 2 0 013 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" stroke="currentColor" stroke-width="1.8"/></svg>
+              </div>
+              <div>
+                <span class="contact-label">Phone</span>
+                <span class="contact-value">[+91 00000 00000] — Update with official number</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-links" aria-label="Social media links">
+            <a href="#" class="social-link" id="socialLinkedIn" aria-label="IEEE RRCE on LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" stroke="currentColor" stroke-width="1.8"/><circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="1.8"/></svg>
+            </a>
+            <a href="#" class="social-link" id="socialInstagram" aria-label="IEEE RRCE on Instagram">
+              <svg viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" stroke-width="1.8"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" stroke="currentColor" stroke-width="1.8"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+            </a>
+            <a href="#" class="social-link" id="socialTwitter" aria-label="IEEE RRCE on Twitter / X">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" stroke="currentColor" stroke-width="1.8"/></svg>
+            </a>
+            <a href="#" class="social-link" id="socialYoutube" aria-label="IEEE RRCE on YouTube">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58z" stroke="currentColor" stroke-width="1.8"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap" data-reveal data-reveal-delay="200">
+          <form class="contact-form" id="contactForm" novalidate aria-label="Contact form">
+            <h3 class="form-title">Send Us a Message</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname" class="form-label">First Name</label>
+                <input type="text" id="fname" name="fname" class="form-input" placeholder="Your first name" autocomplete="given-name" required />
+              </div>
+              <div class="form-group">
+                <label for="lname" class="form-label">Last Name</label>
+                <input type="text" id="lname" name="lname" class="form-input" placeholder="Your last name" autocomplete="family-name" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="your.email@example.com" autocomplete="email" required />
+            </div>
+            <div class="form-group">
+              <label for="subject" class="form-label">Subject</label>
+              <select id="subject" name="subject" class="form-input form-select" required>
+                <option value="" disabled selected>Select a topic</option>
+                <option value="membership">IEEE Membership</option>
+                <option value="events">Events & Workshops</option>
+                <option value="collaboration">Collaboration</option>
+                <option value="general">General Inquiry</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" name="message" class="form-input form-textarea" placeholder="Tell us what's on your mind..." rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn-submit" id="btnSubmit" aria-label="Send message">
+              <span>Send Message</span>
+              <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <p class="form-note" id="formMsg" role="alert" aria-live="polite"></p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════ FOOTER ═══ -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-container">
+      <div class="footer-top">
+
+        <div class="footer-brand">
+          <a href="#home" class="footer-logo-link" aria-label="IEEE RRCE Home">
+            <svg class="footer-brand-svg" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="2" y="2" width="40" height="40" rx="8" stroke="#1456A0" stroke-width="2"/>
+              <path d="M8 14h6v16H8zM16 14h6v16h-6zM26 14c4.418 0 8 3.582 8 8s-3.582 8-8 8h-2V14h2z" fill="#1456A0"/>
+            </svg>
+            <div class="footer-brand-text">
+              <span class="fb-rrce">RRCE</span>
+              <span class="fb-ieee">IEEE</span>
+              <span class="fb-tagline">Innovate. Inspire. Impact.</span>
+            </div>
+          </a>
+          <p class="footer-tagline">RajaRajeswari College of Engineering<br>Bengaluru, Karnataka — IEEE Student Branch</p>
+          <p class="footer-ieee-note">IEEE is the world's largest technical professional organization dedicated to advancing technology for the benefit of humanity.</p>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4 class="footer-nav-title">Quick Links</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#home" class="footer-nav-link">Home</a></li>
+            <li><a href="#about" class="footer-nav-link">About IEEE RRCE</a></li>
+            <li><a href="#communities" class="footer-nav-link">Technical Communities</a></li>
+            <li><a href="#events" class="footer-nav-link">Events</a></li>
+            <li><a href="#innovation" class="footer-nav-link">Innovation</a></li>
+            <li><a href="#leadership" class="footer-nav-link">Leadership</a></li>
+            <li><a href="#gallery" class="footer-nav-link">Gallery</a></li>
+            <li><a href="#contact" class="footer-nav-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4 class="footer-nav-title">IEEE Resources</h4>
+          <ul class="footer-nav-list">
+            <li><a href="https://www.ieee.org" target="_blank" rel="noopener noreferrer" class="footer-nav-link">IEEE.org</a></li>
+            <li><a href="https://ieeexplore.ieee.org" target="_blank" rel="noopener noreferrer" class="footer-nav-link">IEEE Xplore</a></li>
+            <li><a href="https://www.ieee.org/membership/students" target="_blank" rel="noopener noreferrer" class="footer-nav-link">Student Membership</a></li>
+            <li><a href="https://www.ieee.org/conferences" target="_blank" rel="noopener noreferrer" class="footer-nav-link">Conferences</a></li>
+            <li><a href="https://students.ieee.org" target="_blank" rel="noopener noreferrer" class="footer-nav-link">Student Portal</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4 class="footer-nav-title">College</h4>
+          <ul class="footer-nav-list">
+            <li><a href="https://www.rrce.org" target="_blank" rel="noopener noreferrer" class="footer-nav-link">RRCE Official Website</a></li>
+            <li><a href="#contact" class="footer-nav-link">Contact Branch</a></li>
+            <li><a href="#join" class="footer-nav-link">Join IEEE</a></li>
+          </ul>
+          <div class="footer-social" aria-label="Social media">
+            <a href="#" class="footer-social-link" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" stroke="currentColor" stroke-width="1.8"/><circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="1.8"/></svg></a>
+            <a href="#" class="footer-social-link" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.8"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" stroke="currentColor" stroke-width="1.8"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+            <a href="#" class="footer-social-link" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="none"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" stroke="currentColor" stroke-width="1.8"/></svg></a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2024 IEEE Student Branch, RajaRajeswari College of Engineering, Bengaluru. All rights reserved.</p>
+        <p class="footer-disclaimer">IEEE and the IEEE logo are registered trademarks of the Institute of Electrical and Electronics Engineers, Incorporated.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Back-to-top button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top" title="Back to top">
+    <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 16V4M4 10l6-6 6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
